@@ -1,0 +1,23 @@
+LL: Find Kth Node From End ( ** Interview Question)
+Implement the findKthFromEnd member function for the LinkedList class, which returns the k-th node from the end of the linked list WITHOUT USING THE LENGTH of the list.
+
+If the value of k is greater than the length of the list, the function should return nullptr.
+
+
+
+Function signature:
+
+Node* findKthFromEnd(int k)
+
+
+
+Example:
+
+Consider the following singly linked list:
+
+1 -> 2 -> 3 -> 4 -> 5 -> nullptr
+
+
+
+For the given list, the function ll.findKthFromEnd(2) should return the node with value 4, as it is the 2nd node from the end of the list.
+

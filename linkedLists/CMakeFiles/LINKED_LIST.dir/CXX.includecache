@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/trav/Documents/TeslaRoboticsPrep/InterviewPrepCpp/linkedLists/LinkedList.h
+iostream
+-
+Node.h
+/Users/trav/Documents/TeslaRoboticsPrep/InterviewPrepCpp/linkedLists/Node.h
+
+/Users/trav/Documents/TeslaRoboticsPrep/InterviewPrepCpp/linkedLists/Node.h
+iostream
+-
+
+/Users/trav/Documents/TeslaRoboticsPrep/InterviewPrepCpp/linkedLists/main.cpp
+iostream
+-
+LinkedList.h
+/Users/trav/Documents/TeslaRoboticsPrep/InterviewPrepCpp/linkedLists/LinkedList.h
+
