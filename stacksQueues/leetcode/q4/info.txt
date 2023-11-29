@@ -1,0 +1,48 @@
+Stack: Parentheses Balanced ( ** Interview Question)
+Implement a function called isBalancedParentheses() that checks if the input string contains balanced parentheses.
+
+
+
+Input:
+The function takes a constant reference to a string parentheses.
+
+
+
+Output:
+The function should return a boolean value indicating whether the input string contains balanced parentheses or not.
+
+
+
+Constraints:
+The input string may contain any printable ASCII characters, but the function should only consider the opening and closing parentheses '(' and ')' for determining balance.
+
+
+
+Examples:
+
+Consider the following input string:
+
+parentheses: "()"
+After calling isBalancedParentheses(parentheses), the result should be:
+
+true
+
+
+
+
+Consider the following input string:
+
+parentheses: "(()))"
+After calling isBalancedParentheses(parentheses), the result should be:
+
+false
+
+
+
+
+Consider the following input string:
+
+parentheses: ")("
+After calling isBalancedParentheses(parentheses), the result should be:
+
+false

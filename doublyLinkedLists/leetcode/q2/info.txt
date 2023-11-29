@@ -1,0 +1,41 @@
+DLL: Reverse ( ** Interview Question)
+Implement a member function called reverse() that reverses the order of the nodes in the list.
+
+Input:
+The function is a member of the DoublyLinkedList class, which has a head and a tail pointer, as well as a length attribute.
+
+
+
+Output:
+No explicit output is returned. However, the function should modify the doubly linked list such that the order of the nodes is reversed.
+
+
+
+Constraints:
+The doubly linked list may be empty, have only one node, or have two or more nodes.
+
+
+
+Example:
+
+Consider the following doubly linked list:
+
+Head: 1
+Tail: 5
+Length: 5
+ 
+Doubly Linked List:
+1 <-> 2 <-> 3 <-> 4 <-> 5
+
+
+After calling reverse(), the list should be:
+
+Head: 5
+Tail: 1
+Length: 5
+ 
+Doubly Linked List:
+5 <-> 4 <-> 3 <-> 2 <-> 1
+
+
+Note that the list is reversed by updating the prev and next pointers of each node.

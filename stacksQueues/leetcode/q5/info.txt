@@ -1,0 +1,54 @@
+Stack: Sort Stack ( ** Interview Question)
+Implement a function called sortStack() that sorts a given stack of integers in ascending order using an additional stack.
+
+
+
+Input:
+The function takes a reference to a stack of integers inputStack, with an arbitrary size.
+
+
+
+Output:
+The function should not return any value, but it should modify the input stack in-place such that the elements are sorted in ascending order, with the smallest element at the top.
+
+
+
+Constraints:
+The input stack may contain positive or negative integers. The function must use only one additional stack for sorting purposes, and no other data structures are allowed.
+
+
+
+Examples:
+
+Consider the following input stack:
+
+inputStack:
+5
+2
+7
+1
+After calling sortStack(inputStack), the input stack should be:
+
+inputStack:
+1
+2
+5
+7
+
+
+
+
+Consider the following input stack:
+
+inputStack:
+-3
+0
+4
+-1
+After calling sortStack(inputStack), the input stack should be:
+
+inputStack:
+-3
+-1
+0
+4

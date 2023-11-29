@@ -215,14 +215,4 @@ class LinkedList{
                 temp = temp->next;
             }
         }
-
-        Node* findMiddleNode(){
-            Node* slow = head;
-            Node* fast = head;
-            while(fast && fast->next){
-                slow = slow->next;
-                fast = fast->next->next;
-            }
-            return slow;
-        }
 };

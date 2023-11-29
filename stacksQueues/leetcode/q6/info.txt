@@ -1,0 +1,44 @@
+Queue Using Stacks: Enqueue ( ** Interview Question) NEW
+In a typical queue, the enqueue operation is used to add an item to the end of the queue. In this problem, you are required to implement the enqueue method, but there's a twist. The underlying data structure is not a typical array or linked list; instead, you are using two stacks (stack1 and stack2) to simulate the behavior of a queue.
+
+
+
+Background:
+
+A stack is a Last-In-First-Out (LIFO) data structure. A queue, on the other hand, is a First-In-First-Out (FIFO) data structure. The challenge here is to use the properties of two stacks to simulate the behavior of a queue. Specifically, you will be working with the enqueue operation, which should add items to the end of the simulated queue.
+
+You're provided with a partial implementation of the QueueUsingTwoStacks class. Here's what you have:
+
+A front method that retrieves the front element of the queue without removing it.
+
+An isEmpty method that checks if the queue is empty.
+
+A partially implemented enqueue method.
+
+The two stacks are represented by stack1 and stack2.
+
+
+
+Task:
+
+Complete the enqueue method of the QueueUsingTwoStacks class.
+
+
+
+Constraints:
+
+The enqueue operation should have a time complexity of O(1). This means you can only use constant-time operations in its implementation.
+
+You can only use standard stack operations: push, pop, top, and empty.
+
+You should not use any other data structures or helper methods.
+
+
+Tips:
+
+The enqueue operation in a typical queue adds an item to the end. Think about how the order of items in a stack can be manipulated using another stack to maintain the order of items as in a queue.
+
+stack1 will primarily be used to handle enqueue operations, while stack2 will be used to handle dequeue and front operations. This is evident from the existing front method provided.
+
+Always keep in mind the behavior of a queue: items are added at the end and removed from the front. With two stacks at your disposal, you need to figure out a way to ensure this behavior.
+

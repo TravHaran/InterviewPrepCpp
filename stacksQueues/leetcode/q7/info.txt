@@ -1,0 +1,45 @@
+
+Queue Using Stacks: Dequeue ( ** Interview Question) NEW
+In the realm of data structures, a queue represents a First-In-First-Out (FIFO) mechanism, where the dequeue operation is used to remove the front-most item. Your task is to implement this dequeue operation, but not with a standard queue structure. The challenge is to implement this operation using two stacks (stack1 and stack2) to simulate the behavior of a queue.
+
+
+
+Background:
+
+You're provided with the QueueUsingTwoStacks class that uses two stacks (stack1 and stack2) to simulate the operations of a queue. The class contains:
+
+A front method that returns the front-most item of the queue without removing it.
+
+An isEmpty method that checks if the queue is empty.
+
+An enqueue method that adds an item to the end of the queue.
+
+A partially implemented dequeue method that you need to perfect.
+
+
+
+Task:
+
+Your mission is to perfect the dequeue method of the QueueUsingTwoStacks class, ensuring that it adheres to the behavior of a typical queue's dequeue operation.
+
+
+
+Constraints:
+
+You should strive for optimal time complexity.
+
+Only standard stack operations (push, pop, top, and empty) are allowed.
+
+No additional data structures or helper methods should be used.
+
+
+
+Tips:
+
+Reflect on the unique LIFO property of a stack and how using two of them can simulate the FIFO nature of a queue.
+
+Examine the front method carefully. It provides a clue on how to retrieve (and remove) the front-most item using the two stacks.
+
+For dequeue, focus on how to effectively remove the front-most item. Remember, in our setup, stack1 mainly deals with the enqueue operation, and stack2 handles the dequeue and front operations.
+
+If stack2 is empty and a dequeue operation is requested, the items from stack1 must be transferred to stack2 in a manner that the front-most item in the queue becomes accessible at the top of stack2.

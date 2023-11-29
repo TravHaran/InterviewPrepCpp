@@ -1,0 +1,49 @@
+Stack: Pop for a Stack That Uses a Vector ( ** Interview Question)
+Add a member function to the Stack class that we started in the last exercise called pop() that removes the top element from the stack if it is not empty.
+
+Remember: This Stack implementation uses a vector instead of a Linked List.
+
+
+
+Input:
+The function is a member of the Stack class, which has a private member stackVector, a vector<int> representing the stack.
+
+
+
+Output:
+The function should not return any value, but it should remove the top element from the stack if it is not empty. If the stack is empty, the function should do nothing.
+
+
+
+Constraints:
+The pop() function should work correctly for stacks of any size, including empty stacks.
+
+
+
+Examples:
+
+Consider the following stack:
+
+Stack:
+5
+4
+3
+2
+1
+After calling pop() with the Stack object, the stack should look like this:
+
+Stack:
+4
+3
+2
+1
+
+
+
+
+Consider an empty stack:
+
+Stack:
+After calling pop() with the Stack object, the stack should remain empty:
+
+Stack:
