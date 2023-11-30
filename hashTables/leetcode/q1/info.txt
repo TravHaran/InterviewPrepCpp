@@ -1,0 +1,58 @@
+
+HT: Item In Common ( ** Interview Question)
+Implement a function called itemInCommon() that checks if two input vectors have at least one common item.
+
+
+
+Input:
+The function takes two vectors of integers as input parameters:
+
+vect1: a vector of integers
+
+vect2: a vector of integers
+
+
+
+Output:
+The function should return a boolean value indicating whether the two input vectors have at least one item in common or not.
+
+
+
+Constraints:
+
+The input vectors may have duplicate integers.
+
+
+
+Examples:
+
+Consider the following input vectors:
+
+vect1: {1, 2, 3, 4, 5}
+vect2: {6, 7, 8, 9, 10}
+After calling itemInCommon(vect1, vect2), the result should be:
+
+arduinoCopy code
+false
+
+
+
+
+Consider the following input vectors:
+
+vect1: {1, 2, 3, 4, 5}
+vect2: {4, 5, 6, 7, 8}
+After calling itemInCommon(vect1, vect2), the result should be:
+
+true
+
+
+
+
+Consider the following input vectors:
+
+vect1: {1, 2, 2, 4, 5}
+vect2: {6, 7, 8, 2, 10}
+After calling itemInCommon(vect1, vect2), the result should be:
+
+true

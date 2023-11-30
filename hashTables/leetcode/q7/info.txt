@@ -1,0 +1,48 @@
+Set: Remove Duplicates ( ** Interview Question)
+Write a function called removeDuplicates.
+
+This function takes a list of numbers as input and returns a new list that has all the duplicate numbers removed.
+
+
+
+Input
+
+A list of numbers stored in a vector called myList.
+
+
+
+Output
+
+A new list of numbers, also stored in a vector, with all duplicates removed.
+
+
+
+Example:
+
+Input List
+
+[1, 2, 2, 3, 3, 3, 4, 5, 5, 6]
+
+
+
+Output List
+
+[1, 2, 3, 4, 5, 6]
+
+
+
+Here is how the function works, step-by-step:
+
+
+
+Start with the Original List: The function starts with the original list of numbers that may have duplicates.
+
+Create an Empty Set: It then creates an empty set to store unique numbers.
+
+Go Through Each Number: The function looks at each number in the original list, one by one.
+
+Add to Set: If a number is not already in the set, it gets added. If it's already there, the function skips it.
+
+Create a New List: Finally, the function makes a new list from the numbers in the set. The new list has all duplicates removed.
+
+Return the New List: The function returns the new list.

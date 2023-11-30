@@ -1,0 +1,49 @@
+HT: First Non-Repeating Character ( ** Interview Question)
+Implement a function called firstNonRepeatingChar() that finds and returns the first non-repeating character in a given string.
+
+
+
+Input:
+The function takes a constant reference to a string input_string.
+
+
+
+Output:
+The function should return a character which is the first non-repeating character in the input string. If no non-repeating character is found, the function should return a null character ('\0').
+
+
+
+Constraints:
+
+The input string may contain any printable ASCII characters.
+
+
+
+Examples:
+
+Consider the following input string:
+
+input_string: "programming"
+After calling firstNonRepeatingChar(input_string), the result should be:
+
+'p'
+
+
+
+
+Consider the following input string:
+
+input_string: "truetalent"
+After calling firstNonRepeatingChar(input_string), the result should be:
+
+'r'
+
+
+
+
+Consider the following input string:
+
+input_string: "aabbcc"
+After calling firstNonRepeatingChar(input_string), the result should be:
+
+'\0'

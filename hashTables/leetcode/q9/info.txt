@@ -1,0 +1,67 @@
+
+Set: Find Pairs ( ** Interview Question)
+Write a function called findPairs.
+
+This function takes two lists of numbers and a target number.
+
+It then finds pairs of numbers where one number is from the first list and the other is from the second list, and their sum equals the target number.
+
+The function returns these pairs.
+
+
+
+What Do We Mean by "Pairs"?
+
+Pairs are sets of two numbers. For example, if we have 4 in one list and 6 in another, and our target number is 10, then (4, 6) is a pair that adds up to 10.
+
+
+
+What Do You Need to Do?
+
+Receive Two Lists and a Target: The function takes two lists of numbers and a target number as input.
+
+Go Through Each Number in First List: It goes through each number in the first list and remembers them.
+
+Go Through Each Number in Second List: Then, it looks at each number in the second list.
+
+Find Matching Pairs: For each number in the second list, the function checks if there is a number in the first list that, when added to it, equals the target number.
+
+Store the Pairs: If such a pair is found, the function stores it.
+
+Return the Pairs: Finally, the function returns all the pairs it found.
+
+
+
+Input
+
+A list of numbers stored in a vector called arr1.
+
+Another list of numbers stored in a vector called arr2.
+
+A target number called target.
+
+
+
+Output
+
+A list of pairs that add up to the target number. Each pair contains one number from arr1 and one number from arr2.
+
+
+
+Example
+
+Input Lists and Target
+
+First List: [1, 2, 3]
+
+Second List: [4, 5, 6]
+
+Target: 8
+
+Output Pairs
+
+[(2, 6), (3, 5)]
+
+Why?
+
+In this example, the pairs (2, 6) and (3, 5) are the only pairs where one number is from the first list and the other is from the second list, and they add up to 8.

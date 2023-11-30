@@ -1,0 +1,72 @@
+Set: Has Unique Chars ( ** Interview Question)
+Write a function named hasUniqueChars.
+
+The function checks if all the characters in a given text are unique or not.
+
+If they are unique, the function will return true. If even one character is repeated, the function will return false.
+
+
+
+What Do We Mean by "Unique"?
+
+Unique means that no letter shows up more than once. For example, the word "apple" does not have unique characters because 'p' appears twice. But the word "orange" has unique characters because each letter is different.
+
+
+
+What Do You Need to Do?
+
+Receive the Text: The function takes a text string as input.
+
+Check Each Character: The function goes through each character in the text one by one.
+
+Store Characters: For each new character it finds, the function will store it somewhere so it can remember it.
+
+Find Duplicates: If the function finds a character it has seen before, it will know the text does not have all unique characters.
+
+Return the Result: Finally, the function will tell us if all characters in the text are unique or not.
+
+
+
+Input
+
+A text string called str.
+
+
+
+Output
+
+true if all characters in the string are unique.
+
+false if any character in the string is repeated.
+
+
+
+Example:
+
+Input Text
+
+"hello"
+
+Output
+
+false
+
+Why?
+
+In the word "hello," the letter 'l' appears twice. So, the output is false.
+
+
+
+Another Example:
+
+Input Text
+
+"world"
+
+Output
+
+true
+
+Why?
+
+In the word "world," all the letters are different from each other. So, the output is true.

@@ -1,0 +1,59 @@
+
+Set: Longest Consecutive Sequence ( ** Interview Question)
+Write a function called longestConsecutiveSequence.
+
+This function takes a list of numbers as input and finds the length of the longest sequence of numbers that can be arranged in order.
+
+For example, if the list is [2, 1, 6, 9, 4, 3], the longest sequence in order is [1, 2, 3, 4], and the length is 4.
+
+
+
+What Do We Mean by "Sequence in Order"?
+
+A sequence in order is a group of numbers that follow each other without any gaps. For example, 1, 2, 3, 4 is a sequence in order because they follow each other. 1, 3, 4 is not a sequence in order because there is a gap; 2 is missing.
+
+
+
+What Do You Need to Do?
+
+Receive a List: The function takes a list of numbers as input.
+
+Look at Each Number: The function examines each number in the list.
+
+Find Starting Points: The function identifies good starting points for sequences.
+
+Check for Next Numbers: For each starting point, the function checks if the next number in the sequence is in the list.
+
+Count Length: It keeps track of how long each sequence is.
+
+Find Longest: The function identifies which sequence is the longest.
+
+Return Length: Finally, the function returns the length of the longest sequence.
+
+
+
+Input
+
+A list of numbers stored in a vector called nums.
+
+
+
+Output
+
+The length of the longest sequence of numbers that can be arranged in order.
+
+
+
+Example:
+
+Input List
+
+[2, 1, 6, 9, 4, 3]
+
+Output Length
+
+4
+
+Why?
+
+In this example, the longest sequence that can be arranged in order is [1, 2, 3, 4]. So, the length is 4.

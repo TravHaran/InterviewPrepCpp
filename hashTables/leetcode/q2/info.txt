@@ -1,0 +1,46 @@
+
+HT: Find Duplicates ( ** Interview Question)
+Implement a function called findDuplicates() that finds and returns all the duplicate elements in a given vector of integers.
+
+
+
+Input:
+The function takes a constant reference to a vector of integers nums.
+
+
+
+Output:
+The function should return a vector of integers containing all the duplicate elements in the input vector nums. The order of the elements in the output vector does not matter.
+
+
+
+Examples:
+
+
+
+Consider the following input vector:
+
+nums: {1, 2, 3, 4, 4, 5, 5, 6, 7, 8}
+After calling findDuplicates(nums), the result should be:
+
+{4, 5}
+
+
+
+
+Consider the following input vector:
+
+nums: {10, 20, 30, 20, 40, 50, 30}
+After calling findDuplicates(nums), the result should be:
+
+{20, 30}
+
+
+
+
+Consider the following input vector:
+
+nums: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+After calling findDuplicates(nums), the result should be:
+
+{}

@@ -1,0 +1,51 @@
+
+HT: Subarray Sum ( ** Interview Question)
+Implement a function called subarraySum() that finds a continuous subarray within a given vector of integers that adds up to a specific target number.
+
+
+
+Input:
+The function takes the following inputs:
+
+A constant reference to a vector of integers nums.
+
+An integer target.
+
+
+
+Output:
+The function should return a vector of two integers representing the start and end indices (inclusive) of the continuous subarray in the input vector nums that adds up to the target value. If no such subarray exists, the function should return an empty vector.
+
+
+
+Examples:
+
+Consider the following input vector and target:
+
+nums: {1, 2, 3, 4, 5}
+target: 9
+After calling subarraySum(nums, target), the result should be:
+
+{1, 3}
+
+
+
+
+Consider the following input vector and target:
+
+nums: {1, 2, 3, 7, 5}
+target: 12
+After calling subarraySum(nums, target), the result should be:
+
+{1, 3}
+
+
+
+
+Consider the following input vector and target:
+
+nums: {-1, 4, 2, 7, 1}
+target: 13
+After calling subarraySum(nums, target), the result should be:
+
+{1, 3}
