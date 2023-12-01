@@ -1,0 +1,47 @@
+
+Bubble Sort of LL ( ** Interview Question)
+In this exercise, you will implement the bubbleSort() method to sort a singly linked list using the Bubble Sort algorithm. The goal is to sort the linked list in ascending order without creating any new nodes. You will only rearrange the value fields of the existing nodes.
+
+Method Signature:
+
+void bubbleSort();
+
+
+
+Constraints:
+
+Do not create new nodes; only change the value fields of existing nodes.
+
+
+
+Algorithm Outline:
+
+If the list has less than two elements, it's already sorted. Exit the function.
+
+Loop through the list until it is sorted:
+
+Set a Node* current to point at the head of the list.
+
+Loop through the list from head up to the point where the list is already sorted.
+
+If the value in current is greater than the value in current->next, swap them.
+
+Move the 'sorted until' marker one node backward.
+
+
+
+Example:
+
+Suppose your linked list contains the following elements: 5 -> 2 -> 9 -> 1 -> 5 -> 6
+
+After performing bubbleSort(), the linked list should look like this: 1 -> 2 -> 5 -> 5 -> 6 -> 9
+
+
+
+Tips:
+
+Take time to understand how the Bubble Sort algorithm works on arrays. The concept will be similar for linked lists.
+
+Draw diagrams to visualize the linked list before and after sorting to help you understand the algorithm.
+
+Make sure to test your code thoroughly using various scenarios like empty lists, lists with one element, and lists with many elements.

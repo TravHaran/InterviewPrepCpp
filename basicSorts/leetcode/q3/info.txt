@@ -1,0 +1,57 @@
+
+Insertion Sort of LL ( ** Interview Question)
+Your task is to implement the insertionSort() method to sort a singly linked list using the Insertion Sort algorithm. The goal is to sort the linked list in ascending order. You should only change the value fields of the existing nodes and update the next pointers appropriately.
+
+
+
+Method Signature:
+
+void insertionSort();
+
+
+
+Constraints:
+
+Do not create new nodes; you should only change the value fields and update next pointers of existing nodes.
+
+
+
+Algorithm Outline:
+
+If the list has less than two elements, it's already sorted. Exit the function.
+
+Divide the list into a "sorted" part and an "unsorted" part.
+
+The "sorted" part starts with the head node.
+
+The "unsorted" part starts with the node next to the head.
+
+Loop through each node in the "unsorted" part.
+
+For each node, find its correct position in the "sorted" part.
+
+Insert it in the correct position.
+
+Update the head and tail pointers of the sorted linked list.
+
+
+
+Example:
+
+Suppose your linked list contains the following elements:
+
+5 -> 2 -> 9 -> 1 -> 5 -> 6
+
+After performing insertionSort(), the linked list should look like this:
+
+1 -> 2 -> 5 -> 5 -> 6 -> 9
+
+
+
+Tips:
+
+Take some time to understand how the Insertion Sort algorithm works on arrays. The concept will be similar for linked lists.
+
+Drawing diagrams to visualize the linked list before and after sorting can help you understand the algorithm better.
+
+Make sure to test your code thoroughly using various scenarios, like empty lists, lists with one element, and lists with many elements.

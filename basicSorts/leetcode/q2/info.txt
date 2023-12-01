@@ -1,0 +1,49 @@
+Selection Sort of LL ( ** Interview Question)
+Your task is to implement the selectionSort() method to sort a singly linked list using the Selection Sort algorithm. The goal is to sort the linked list in ascending order, but you can only change the value fields of the existing nodes.
+
+Method Signature:
+
+void selectionSort();
+
+
+
+Constraints:
+
+Do not create new nodes; you should only change the value fields of existing nodes.
+
+Algorithm Outline:
+
+If the list has less than two elements, it's already sorted. Exit the function.
+
+Set a Node* current to point at the head of the list.
+
+Loop through the list, finding the smallest element in the remaining part of the list.
+
+If you find a smaller element, swap its value with the value in current.
+
+Move current to the next node and repeat steps 3-4 until the end of the list is reached.
+
+
+
+Example:
+
+Suppose your linked list contains the following elements:
+
+5 -> 2 -> 9 -> 1 -> 5 -> 6
+
+After performing selectionSort(), the linked list should look like this:
+
+1 -> 2 -> 5 -> 5 -> 6 -> 9
+
+
+
+Tips:
+
+Take time to understand how the Selection Sort algorithm works on arrays. The concept will be similar for linked lists.
+
+Drawing diagrams to visualize the linked list before and after sorting can be very helpful.
+
+Make sure to test your code thoroughly using various scenarios, like empty lists, lists with one element, and lists with many elements.
+
+
+
