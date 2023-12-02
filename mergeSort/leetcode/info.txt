@@ -1,0 +1,65 @@
+
+Merge Two Sorted LL ( ** Interview Question)
+Your task is to implement the merge(LinkedList& otherList) method.
+
+This method merges two sorted linked lists into a single sorted linked list. The LinkedList class has a head, tail, and length members. The nodes have value and next fields.
+
+
+
+Method Signature:
+
+void merge(LinkedList& otherList);
+
+
+
+Constraints:
+
+The otherList will be empty after the merge operation.
+
+
+
+Algorithm Outline:
+
+Create a dummy node to help with merging.
+
+Initialize a current pointer to the dummy node.
+
+While both lists have elements:
+
+Compare the value of the head nodes.
+
+Add the smaller node to current->next.
+
+Move to the next node in the chosen list.
+
+Update current to its next node.
+
+If one list is empty, add the remaining nodes from the other list.
+
+Update head, tail, and length fields for the merged list.
+
+Clear the head, tail, and length fields of otherList.
+
+
+
+Example:
+
+Suppose list1 contains: 1 -> 3 -> 5
+
+And list2 contains: 2 -> 4 -> 6
+
+After list1.merge(list2);, list1 should contain:
+
+1 -> 2 -> 3 -> 4 -> 5 -> 6
+
+And list2 should be empty.
+
+
+
+Tips:
+
+Understanding merging sorted arrays will help you understand this for linked lists.
+
+Use diagrams to visualize the linked lists and their merging process.
+
+Test your code with various scenarios, like empty lists and lists of different lengths.
