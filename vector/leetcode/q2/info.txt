@@ -1,0 +1,57 @@
+Vector: Find Max Min ( ** Interview Question)
+Title: Finding the Maximum and Minimum Values in a List
+
+Introduction: Often in data processing or while analyzing a set of numbers, two primary metrics we are interested in are the highest (maximum) value and the lowest (minimum) value. The challenge here is to efficiently find these two metrics without sorting the list or using any external libraries.
+
+Objective: Write a function that takes a list of integers and returns a new list containing two elements: the maximum and the minimum value in the input list.
+
+Detailed Requirements:
+
+Input:
+
+A vector of integers (myList). It can be assumed that the list has at least one number. There's no defined maximum length for the list.
+
+Output:
+
+A new vector containing exactly two integers:
+
+The first integer represents the maximum value found in myList.
+
+The second integer represents the minimum value found in myList.
+
+Examples:
+
+Example 1:
+
+Input:
+
+myList: [3, 7, 2, 9, 5]
+
+Output:
+
+[9, 2]
+
+Example 2:
+
+Input:
+
+myList: [5, 5, 5, 5, 5]
+
+Output:
+
+[5, 5] (Even if all numbers are the same, both the maximum and minimum are that number.)
+
+
+
+Tips:
+
+Consider initializing your maximum and minimum values with the first element of the list. This way, you have a starting point for comparison.
+
+Use a single loop to traverse the list, comparing each element with your current maximum and minimum. Update the values accordingly based on the comparisons.
+
+The order in the output list matters; the maximum value should always be the first element.
+
+
+
+Remember, the objective is not just to find the maximum or minimum value but both within a single traversal of the list. Efficiency is key, and the task should be accomplished without sorting the list or using multiple loops.
+

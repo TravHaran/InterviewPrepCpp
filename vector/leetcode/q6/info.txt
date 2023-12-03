@@ -1,0 +1,74 @@
+Vector: Rotate ( ** Interview Question)
+Title: Rotating an Array
+
+Introduction: Array manipulation is a common operation in data processing. One of the operations is rotating the elements of an array. In this problem, the task is to rotate an array to the right by a given number of steps. A rotation on the array means that each element moves to the right, and the last element wraps around to become the first.
+
+Objective: Given a list of integers, nums, and an integer, k, rotate the elements of nums to the right by k steps.
+
+Detailed Requirements:
+
+Input:
+
+A list of integers, nums, which can be of any length, including being empty.
+
+An integer, k, representing the number of steps to rotate the nums to the right.
+
+Output:
+
+There's no direct output from the function. Instead, the input list, nums, is modified in-place to reflect its rotated state.
+
+Examples:
+
+Example 1:
+
+Input:
+
+nums: [1,2,3,4,5,6,7], k: 3
+
+Modified nums:
+
+[5,6,7,1,2,3,4]
+
+Explanation:
+
+Rotate the array 3 times. After the first rotation, the array becomes [7,1,2,3,4,5,6], and so on.
+
+Example 2:
+
+Input:
+
+nums: [-1,-100,3,99], k: 2
+
+Modified nums:
+
+[3,99,-1,-100]
+
+Explanation:
+
+Rotate the array 2 times to achieve the resultant array.
+
+Example 3:
+
+Input:
+
+nums: [1,2,3], k: 4
+
+Modified nums:
+
+[3,1,2]
+
+Explanation:
+
+Rotate the array 4 times. The effect of rotating the array 3 times is the same as not rotating it at all. Hence, rotating it 4 times is equivalent to rotating it once.
+
+
+
+Tips:
+
+If the number of rotations, k, is larger than the length of the array, we can use the modulo operation to reduce the effective number of rotations.
+
+One efficient way to rotate an array is to use reversing. By reversing specific portions of the array in a certain order, we can achieve the desired rotation without having to move each element individually.
+
+
+
+The problem evaluates the ability to perform array manipulations efficiently and understand the properties and patterns of the array rotation operation.

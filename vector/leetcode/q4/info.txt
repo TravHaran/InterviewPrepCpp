@@ -1,0 +1,77 @@
+Vector: Remove Duplicates ( ** Interview Question)
+Title: Removing Duplicate Consecutive Integers in a Sorted List
+
+Introduction: Working with sorted lists is common in programming. While these lists offer the advantage of easier search and analysis, they might contain consecutive duplicates which can be redundant for some applications. The challenge here is to efficiently remove these consecutive duplicate values in-place, without needing a separate data structure.
+
+Objective: Write a function that, given a sorted list of integers, removes all consecutive duplicates and returns the length of the modified list. The function should perform the operation in-place, which means you shouldn't use an additional list to store the result.
+
+Detailed Requirements:
+
+Input:
+
+A sorted vector of integers (nums). The vector can be of any length, including being empty.
+
+Output:
+
+An integer representing the length of the vector after removing consecutive duplicates.
+
+The original vector (nums) should be modified in-place to contain only the unique consecutive values up to the returned length. Elements beyond the new length in the original list don't matter.
+
+Examples:
+
+Example 1:
+
+Input:
+
+nums: [1,1,2,2,2,3,4,4]
+
+Output:
+
+5
+
+Modified nums:
+
+[1,2,3,4,X,X,X,X] (where X can be any number since it's beyond the new length)
+
+Example 2:
+
+Input:
+
+nums: [1,2,3,4]
+
+Output:
+
+4
+
+Modified nums:
+
+[1,2,3,4] (No changes needed as there are no consecutive duplicates)
+
+Example 3:
+
+Input:
+
+nums: []
+
+Output:
+
+0
+
+Modified nums:
+
+[] (No change as the list is empty)
+
+
+
+Tips:
+
+You can achieve the goal using two pointers. One (readPointer) to read the current value and the other (writePointer) to indicate where the next unique value should be written.
+
+Start reading from the second element and compare with the previous element. If they are not the same, it means you've encountered a new unique value. Write this value at the writePointer's position and move the writePointer.
+
+Using this approach ensures you only keep one instance of each consecutive duplicate, effectively compacting the list in-place.
+
+
+
+Remember, the goal is to work within the given list and not utilize additional memory for storing results. Your solution should strive to be space-efficient while being clear and readable.
+

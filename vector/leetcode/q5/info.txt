@@ -1,0 +1,74 @@
+Vector: Max Profit ( ** Interview Question)
+Title: Finding Maximum Profit from Stock Prices
+
+Introduction: The stock market is unpredictable, with prices of stocks rising and falling every day. For those who want to buy and sell stocks to gain profit, knowing when to buy at a low price and when to sell at a high price is crucial. This problem challenges you to determine the best day to buy and sell a stock to achieve maximum profit.
+
+Objective: Given a list of integers where each integer represents the stock price of a company for a particular day (index 0 is Day 1, index 1 is Day 2, and so on), your task is to find the maximum profit you could achieve from buying the stock on one day and selling it on a later day. Note that you are only allowed to complete one transaction, i.e., you can only buy and sell the stock once.
+
+Detailed Requirements:
+
+Input:
+
+A list of integers, prices, representing the stock price for each day. The list can be of any length, including being empty.
+
+Output:
+
+An integer representing the maximum profit you can make. Return 0 if no profit can be made or if the input list is empty.
+
+Examples:
+
+Example 1:
+
+Input:
+
+prices: [7,1,5,3,6,4]
+
+Output:
+
+5
+
+Explanation:
+
+Buy on Day 2 (price = 1) and sell on Day 5 (price = 6) for a profit of 6-1 = 5.
+
+Example 2:
+
+Input:
+
+prices: [7,6,4,3,1]
+
+Output:
+
+0
+
+Explanation:
+
+Prices keep falling, so no transaction will result in a profit.
+
+Example 3:
+
+Input:
+
+prices: [3,2,6,5,0,3]
+
+Output:
+
+4
+
+Explanation:
+
+Buy on Day 2 (price = 2) and sell on Day 3 (price = 6) for a profit of 6-2 = 4.
+
+
+
+Tips:
+
+As you iterate through the list of prices, keep track of the minimum stock price seen so far. This will represent the best day to buy up until the current day.
+
+For each day's price, calculate the potential profit if you were to sell on that day (subtracting the minimum price seen so far). This will give you the maximum possible profit up to that day.
+
+Keep track of the highest profit seen throughout this process. By the end of the iteration, you'll have found the maximum possible profit for the entire timeframe.
+
+
+
+The problem tests your ability to efficiently scan through data to identify optimal buying/selling points, a skill which has practical implications in many algorithmic trading scenarios.
